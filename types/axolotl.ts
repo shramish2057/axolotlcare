@@ -1,0 +1,15 @@
+export type AxolotlMorph =
+  | 'leucistic'
+  | 'golden_albino'
+  | 'melanoid'
+  | 'wild_type'
+  | 'copper'
+  | 'axanthic'
+  | 'piebald'
+  | 'mosaic'
+  | 'chimera'
+  | 'gfp'
+  | 'firefly'
+  | 'lavender'
+  | 'enigma'
+  | 'unknown';

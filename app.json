@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "AxolotlCare",
+    "slug": "axolotlcare",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "axolotlcare",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A4F54"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.axolotlcare.ios",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "AxolotlCare uses your camera to photograph your axolotl for AI health diagnosis.",
+        "NSPhotoLibraryUsageDescription": "AxolotlCare needs photo library access to upload axolotl photos.",
+        "NSLocationWhenInUseUsageDescription": "AxolotlCare uses your location to send heat alerts when temperatures threaten your tank."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#0A4F54"
+      },
+      "package": "app.axolotlcare.android",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/notification-icon.png",
+          "color": "#0A4F54"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "AxolotlCare needs camera access."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "AxolotlCare uses location for heat alerts."
+        }
+      ],
+      "@sentry/react-native/expo"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
