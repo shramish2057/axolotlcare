@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
+    "supabase": "^2.101.0",
     "typescript": "~6.0.3"
   },
   "scripts": {
@@ -45,7 +46,10 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "supabase:login": "supabase login",
+    "supabase:link": "supabase link",
+    "supabase:status": "supabase status"
   },
   "private": true
 }
